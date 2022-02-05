@@ -49,7 +49,7 @@ class FD:
                               capture_output=True,
                               text=True)
 
-    def find(self, pattern, path=Path.cwd(), **kwargs) -> Union[dict, str]:
+    def find(self, pattern, path=Path.cwd(), **kwargs) -> Union[list, str, None]:
         """
         ARGS:
             pattern           the search pattern (a regular expression, unless 'glob=True' is used)
