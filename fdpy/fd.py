@@ -95,10 +95,11 @@ class FD:
             [f'--{k}'.replace('_', '-') for k, v in kwargs.items() if v])
         str_default = ['print0', 'list_details']
         p = self._run(f'{self.fd} {args} {pattern} {path}')
-        if any(kwargs.get(arg) for arg in str_default):
-            res = p.stdout.rstrip()
-        else:
-            res = p.stdout.rstrip().split('\n')
+        res = p.stdout.rstrip()
+        if not any(kwargs.get(arg) for arg in str_default):
+            res = [x for x in p.stdout.split('\n') if x]
+        elif not res:
+            return
         return res
 
     def version(self) -> str:
