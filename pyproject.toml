@@ -8,6 +8,8 @@ authors = [{name = "Alyetama", email = "56323389+Alyetama@users.noreply.github.c
 license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
+readme = "README.md"
+requires-python=">=3.6"
 
 [project.urls]
 Home = "https://github.comm/Alyetama/fdpy"

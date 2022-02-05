@@ -1,3 +1,3 @@
-"""Unofficial fd (https://github.com/sharkdp/fd) port"""
+"""Unofficial fd port for Python"""
 
-__version__ = '0.0.1'
+__version__ = '0.0.3'
