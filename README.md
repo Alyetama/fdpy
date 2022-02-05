@@ -19,8 +19,7 @@ pip install fdpy
 ## Usage
 
 ```py
->>> from fdpy.fd import FD
->>> fd = FD()
+>>> from fdpy import fd
 >>> fd.find('foo.txt')
 # ['/path/to/cwd/foo.txt', '/path/to/cwd/foo.jpg']
 >>> fd.find('Foo.txt', path='/some/dir', hidden=True, no_ignore=True, case_sensitive=True)

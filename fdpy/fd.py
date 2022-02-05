@@ -8,7 +8,7 @@ from .helper import check_path
 from .help_menu import LongHelp, ShortHelp
 
 
-class FD:
+class FD():
     """
     The main class in the module.
 
@@ -49,7 +49,8 @@ class FD:
                               capture_output=True,
                               text=True)
 
-    def find(self, pattern, path=Path.cwd(), **kwargs) -> Union[list, str, None]:
+    def find(self, pattern, path=Path.cwd(),
+             **kwargs) -> Union[list, str, None]:
         """
         ARGS:
             pattern           the search pattern (a regular expression, unless 'glob=True' is used)
