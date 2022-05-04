@@ -1,7 +1,7 @@
 """Unofficial fd port for Python"""
 
-from . import fd
+from . import fdpy
 
-fd = fd.FD()
+fdpy = fdpy.FdPy()
 
-__version__ = '0.1.2'
+__version__ = '0.1.3'

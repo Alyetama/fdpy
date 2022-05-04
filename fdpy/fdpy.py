@@ -8,7 +8,7 @@ from .helper import check_path
 from .help_menu import LongHelp, ShortHelp
 
 
-class FD():
+class FdPy():
     """
     The main class in the module.
 
